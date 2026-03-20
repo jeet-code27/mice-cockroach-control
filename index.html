@@ -36,8 +36,22 @@
     </div>
   </header>
 
+  <!-- Sticky Pest Tabs -->
+  <div id="pest-tabs" class="sticky top-[72px] z-30 bg-white border-b-2 border-gray-200 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex">
+        <a href="#mice-section" class="mice-tab flex-1 text-center py-3 md:py-4 font-bold text-green-700 border-b-4 border-green-600 transition-all hover:bg-green-50 text-sm md:text-base">
+           Mice Control
+        </a>
+        <a href="#cockroach-section" class="roach-tab flex-1 text-center py-3 md:py-4 font-bold text-gray-500 border-b-4 border-transparent transition-all hover:bg-gray-50 hover:text-gray-700 text-sm md:text-base">
+           Cockroach Control
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- 1. Hero Section (Above the Fold) -->
-  <section class="relative bg-gradient-to-br from-green-50 to-green-100 py-16 md:py-24 overflow-hidden">
+  <section id="mice-section" class="relative bg-gradient-to-br from-green-50 to-green-100 py-16 md:py-24 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
@@ -238,8 +252,52 @@
     </div>
   </section>
 
+  <!-- Mouse Control FAQ -->
+  <section class="py-20 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mouse Control FAQ</h2>
+        <p class="text-xl text-gray-600">Common questions about mice infestations answered by our pest control experts.</p>
+      </div>
+      <div class="space-y-6">
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+          <h4 class="text-xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+            <i data-lucide="help-circle" class="w-6 h-6 text-green-600 flex-shrink-0"></i>
+            How fast do mice reproduce?
+          </h4>
+          <p class="text-gray-700 ml-8 text-lg">A female mouse can have 5–10 litters per year.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+          <h4 class="text-xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+            <i data-lucide="help-circle" class="w-6 h-6 text-green-600 flex-shrink-0"></i>
+            How do mice enter homes?
+          </h4>
+          <p class="text-gray-700 ml-8 text-lg">Mice can fit through holes as small as a dime.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+          <h4 class="text-xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+            <i data-lucide="help-circle" class="w-6 h-6 text-green-600 flex-shrink-0"></i>
+            Are mice dangerous?
+          </h4>
+          <p class="text-gray-700 ml-8 text-lg">Yes. They contaminate food and surfaces and can spread disease.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <button onclick="scrollToForm()" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg shadow-xl">
+          Schedule Mice Inspection
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COCKROACH SECTION DIVIDER ===== -->
+  <div class="bg-gray-900 text-white py-6 text-center">
+    <p class="text-lg font-bold tracking-widest uppercase text-green-400">🪳 Cockroach Control Services</p>
+    <p class="text-gray-400 text-sm mt-1">Scroll down for complete cockroach elimination information</p>
+  </div>
+
   <!-- 5.5 Complete Cockroach Elimination -->
-  <section class="py-20 bg-white">
+  <section id="cockroach-section" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
@@ -332,6 +390,281 @@
     </div>
   </section>
 
+  <!-- Cockroach Signs Section -->
+  <section class="py-16 bg-gray-50 border-y border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Top 7 Signs Your Home or Business Has Cockroaches</h2>
+        <p class="text-xl text-gray-600">If you notice any of these warning signs, contact us immediately for a professional inspection.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-50 p-3 rounded-full flex-shrink-0"><i data-lucide="align-justify" class="w-6 h-6 text-red-500"></i></div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg mb-2">1. Cockroach Droppings</h4>
+              <p class="text-gray-600">One of the most common signs of a cockroach infestation is roach droppings. These droppings often look like black pepper, coffee grounds, or small dark pellets. They are commonly found in kitchens, cabinets, behind appliances, and along baseboards.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-50 p-3 rounded-full flex-shrink-0"><i data-lucide="wind" class="w-6 h-6 text-red-500"></i></div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg mb-2">2. Musty or Oily Odor</h4>
+              <p class="text-gray-600">A strong musty or oily smell is often present when cockroach populations grow large. The odor is caused by pheromones released by cockroaches and can become stronger as the infestation increases.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-50 p-3 rounded-full flex-shrink-0"><i data-lucide="moon" class="w-6 h-6 text-red-500"></i></div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg mb-2">3. Seeing Cockroaches at Night</h4>
+              <p class="text-gray-600">Cockroaches are nocturnal pests, meaning they are most active at night. If you turn on the lights in a kitchen or bathroom and see cockroaches running for cover, it often indicates a larger hidden infestation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-50 p-3 rounded-full flex-shrink-0"><i data-lucide="package" class="w-6 h-6 text-red-500"></i></div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg mb-2">4. Egg Cases (Oothecae)</h4>
+              <p class="text-gray-600">Cockroaches lay eggs inside protective cases called oothecae. These egg capsules are usually brown or dark red and can contain 20–40 eggs depending on the species. They are often found behind appliances, inside cabinets, or in storage areas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-50 p-3 rounded-full flex-shrink-0"><i data-lucide="layers" class="w-6 h-6 text-red-500"></i></div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg mb-2">5. Shed Skins</h4>
+              <p class="text-gray-600">As cockroaches grow, they shed their outer shell several times. Finding shed cockroach skins in cabinets, basements, or storage areas is a strong sign of an infestation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-50 p-3 rounded-full flex-shrink-0"><i data-lucide="droplets" class="w-6 h-6 text-red-500"></i></div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg mb-2">6. Smear Marks on Surfaces</h4>
+              <p class="text-gray-600">In areas with moisture, cockroaches may leave smear marks or streaks along walls, baseboards, and floors. These marks are created when roaches travel along surfaces repeatedly.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all md:col-span-2 lg:col-span-3">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-50 p-3 rounded-full flex-shrink-0"><i data-lucide="alert-triangle" class="w-6 h-6 text-red-500"></i></div>
+            <div class="w-full">
+              <h4 class="font-bold text-gray-900 text-lg mb-2">7. Live or Dead Cockroaches</h4>
+              <p class="text-gray-600 mb-3">The most obvious sign of an infestation is seeing live or dead cockroaches in your home or business.</p>
+              <p class="text-gray-600 mb-3">Common areas where cockroaches appear include:</p>
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">Kitchens</span>
+                <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">Bathrooms</span>
+                <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">Basements</span>
+                <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">Utility rooms</span>
+                <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">Restaurants and food storage areas</span>
+              </div>
+              <p class="text-gray-600"><strong class="text-red-600">If cockroaches are visible during the day, the infestation may already be severe.</strong></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center mt-10">
+        <button onclick="scrollToForm()" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg shadow-xl">
+          Get a Free Cockroach Inspection
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cockroach FAQ Section -->
+  <section class="py-20 bg-white border-b border-gray-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Cockroach Control FAQ</h2>
+        <p class="text-xl text-gray-600">Top 20 most searched cockroach questions — answered by our pest control experts.</p>
+      </div>
+      <div class="space-y-4">
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>1. What attracts cockroaches to a home?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Cockroaches are attracted to food crumbs, grease, garbage, moisture, and dark hiding places. Kitchens, bathrooms, and basements are the most common infestation areas.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>2. Are cockroaches dangerous to humans?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Yes. Cockroaches can spread bacteria such as Salmonella and E. coli and may trigger allergies and asthma, especially in children and the elderly.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>3. What are the signs of a cockroach infestation?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Common signs include droppings (resembling black pepper or coffee grounds), musty odors, egg cases (oothecae), smear marks on surfaces, shed skins, and seeing live cockroaches at night.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>4. Why do cockroaches come out at night?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Cockroaches are nocturnal pests. They search for food and water when it is dark and quiet, making nighttime the most active period for infestations.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>5. How fast do cockroaches reproduce?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">A female cockroach can produce hundreds of offspring per year, making infestations grow extremely quickly if left untreated. Early professional treatment is critical.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>6. Can cockroaches fly?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Some species, such as American cockroaches, can glide or fly short distances, especially in warm conditions. However, most household cockroaches prefer to run.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>7. What do cockroach droppings look like?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Cockroach droppings often resemble black pepper or coffee grounds and are commonly found near food sources, along baseboards, in cabinets, and behind appliances.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>8. Where do cockroaches hide during the day?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Cockroaches hide in dark areas such as behind appliances, inside cabinets, under sinks, inside wall voids, and in basements — emerging only at night to feed.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>9. Why do I suddenly have cockroaches?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Cockroaches may enter through cracks in foundations, plumbing lines, drains, grocery bags, cardboard boxes, or even used furniture brought into the home.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>10. Do cockroaches live in clean houses?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Yes. Even clean homes can get cockroaches if food, water, or shelter is available. Cockroaches can survive on very small amounts of food and moisture.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>11. What smell do cockroaches produce?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Cockroaches create a musty or oily odor caused by pheromones and droppings. The smell becomes more noticeable as the population grows.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>12. Can cockroaches make you sick?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Yes. Cockroaches contaminate food and surfaces with bacteria and allergens, potentially causing food poisoning, respiratory issues, and allergic reactions.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>13. How do cockroaches enter homes?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Cockroaches can enter through cracks in foundations, gaps around doors and windows, plumbing openings, drains, grocery bags, or cardboard boxes.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>14. What kills cockroaches the fastest?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Professional pest control treatments using targeted insecticides, gel baits, and insect growth regulators are the most effective solutions for fast, complete elimination.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>15. How long does it take to eliminate cockroaches?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Depending on the infestation size, professional treatments typically take several weeks with follow-up services to ensure complete elimination.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>16. Are cockroaches worse in apartments?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Yes. Cockroaches can spread easily between apartment units through shared walls, plumbing lines, and building structures, making professional treatment essential.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>17. What is the most common cockroach species in homes?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">The German cockroach is the most common indoor cockroach species in the United States, frequently found in kitchens and bathrooms.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>18. Why do cockroaches run when lights turn on?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Cockroaches are photophobic — they avoid light and instinctively move to dark hiding places when exposed to sudden bright light.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>19. Can cockroaches survive without food?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">Cockroaches can survive up to a month without food, but only about a week without water — making moisture control an important part of prevention.</p>
+        </details>
+
+        <details class="bg-gray-50 rounded-2xl border border-gray-100 group">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+            <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>20. When should I call a pest control company for cockroaches?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          </summary>
+          <p class="px-6 pb-6 text-gray-700 text-lg ml-8">If you see cockroaches regularly, notice droppings, detect an unusual odor, or find egg cases, professional treatment is recommended immediately to eliminate the colony before it grows.</p>
+        </details>
+
+      </div>
+      <div class="text-center mt-10">
+        <button onclick="scrollToForm()" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg shadow-xl">
+          Schedule Cockroach Treatment Today
+        </button>
+      </div>
+    </div>
+  </section>
+
   <!-- 6. Why Choose Our Pest Control Company -->
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -385,40 +718,7 @@
     </div>
   </section>
 
-  <!-- 8. FAQ Section -->
-  <section class="py-20 bg-gray-50 border-b border-gray-200">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mouse Control FAQ</h2>
-      </div>
-      
-      <div class="space-y-6">
-        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <h4 class="text-xl font-bold text-gray-900 mb-2 flex items-center gap-2">
-            <i data-lucide="help-circle" class="w-6 h-6 text-green-600 flex-shrink-0"></i>
-            How fast do mice reproduce?
-          </h4>
-          <p class="text-gray-700 ml-8 text-lg">A female mouse can have 5–10 litters per year.</p>
-        </div>
 
-        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <h4 class="text-xl font-bold text-gray-900 mb-2 flex items-center gap-2">
-            <i data-lucide="help-circle" class="w-6 h-6 text-green-600 flex-shrink-0"></i>
-            How do mice enter homes?
-          </h4>
-          <p class="text-gray-700 ml-8 text-lg">Mice can fit through holes as small as a dime.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <h4 class="text-xl font-bold text-gray-900 mb-2 flex items-center gap-2">
-            <i data-lucide="help-circle" class="w-6 h-6 text-green-600 flex-shrink-0"></i>
-            Are mice dangerous?
-          </h4>
-          <p class="text-gray-700 ml-8 text-lg">Yes. They contaminate food and surfaces and can spread disease.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- 9. Final Call to Action -->
   <section id="contact-form" class="py-20 bg-gradient-to-br from-green-50 to-green-100 relative">
@@ -553,6 +853,29 @@
   <script>
     // Initialize Lucide Icons
     lucide.createIcons();
+
+    // Tab active state tracking on scroll
+    function updateTabs() {
+      const roachSection = document.getElementById('cockroach-section');
+      const miceTab = document.querySelector('.mice-tab');
+      const roachTab = document.querySelector('.roach-tab');
+      if (!roachSection || !miceTab || !roachTab) return;
+      const roachTop = roachSection.getBoundingClientRect().top + window.scrollY - 160;
+      const scrollY = window.scrollY;
+      if (scrollY >= roachTop) {
+        roachTab.classList.add('text-green-700', 'border-green-600');
+        roachTab.classList.remove('text-gray-500', 'border-transparent');
+        miceTab.classList.remove('text-green-700', 'border-green-600');
+        miceTab.classList.add('text-gray-500', 'border-transparent');
+      } else {
+        miceTab.classList.add('text-green-700', 'border-green-600');
+        miceTab.classList.remove('text-gray-500', 'border-transparent');
+        roachTab.classList.remove('text-green-700', 'border-green-600');
+        roachTab.classList.add('text-gray-500', 'border-transparent');
+      }
+    }
+    window.addEventListener('scroll', updateTabs);
+    updateTabs();
 
     function scrollToForm() {
       const formSection = document.getElementById('contact-form');
