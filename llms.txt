@@ -1,0 +1,38 @@
+# PestControlBoston.us — LLM Context File
+# https://pestcontrolboston.us/llms.txt
+
+## About
+PestControlBoston.us is a free referral service that connects homeowners and businesses in the Boston, MA metropolitan area with licensed, independent pest control professionals. We specialize in mice control and cockroach extermination services.
+
+## Important Notice
+PestControlBoston.us is NOT a pest control company. We do not perform, provide, or directly offer pest control, extermination, or inspection services. We are an informational and lead-generation website.
+
+## Services Covered
+- Mice extermination and rodent control
+- Cockroach extermination and treatment
+- Pest inspections (connected via third-party providers)
+- Residential and commercial pest control referrals
+
+## Service Area
+Greater Boston, MA metropolitan area including:
+- Boston, MA
+- Worcester, MA
+- Framingham, MA
+- Shrewsbury, MA
+- Marlborough, MA
+- Westborough, MA
+- Southborough, MA
+- Hopkinton, MA
+
+## Contact
+Email: worcesterpestcontrol@gmail.com
+Address: 867 Boylston St Floor 5 PMB 275, Boston, MA 02116
+
+## Legal
+- Privacy Policy: https://pestcontrolboston.us/privacy-policy.html
+- Third-Party Disclaimer: https://pestcontrolboston.us/disclaimer.html
+
+## Pages
+- Homepage: https://pestcontrolboston.us/
+- Privacy Policy: https://pestcontrolboston.us/privacy-policy.html
+- Third-Party Disclaimer: https://pestcontrolboston.us/disclaimer.html
