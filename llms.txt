@@ -36,3 +36,7 @@ Address: 867 Boylston St Floor 5 PMB 275, Boston, MA 02116
 - Homepage: https://pestcontrolboston.us/
 - Privacy Policy: https://pestcontrolboston.us/privacy-policy.html
 - Third-Party Disclaimer: https://pestcontrolboston.us/disclaimer.html
+
+## Blog
+- Blog Index: https://pestcontrolboston.us/blog/
+- Mice in Boston Brownstones — Historic Home Pest Guide: https://pestcontrolboston.us/blog/mice-boston-brownstones/
