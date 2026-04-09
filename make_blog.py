@@ -1,0 +1,475 @@
+import os
+
+dir_path = r'e:\AAA BizBox\04 - landing pages\mice-cockroch-extermination'
+
+with open(os.path.join(dir_path, 'blog/mice-boston-brownstones/index.html'), 'r', encoding='utf-8') as f:
+    template = f.read()
+
+# Instead of blindly replacing, I will reconstruct the HTML using Python strings
+# taking the layout from the template.
+html_content = r"""<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Boston Landlord Pest Control Responsibilities Guide | PestControlBoston.us</title>
+  <meta name="description" content="Learn MA landlord pest control responsibilities, tenant rights, and legal obligations. Complete guide for Boston area property owners and renters.">
+  <meta name="keywords" content="Boston landlord pest control, Massachusetts tenant rights pest control, state sanitary code rodents MA, bed bug responsibilities Boston, rent withholding Boston pests">
+  <meta name="author" content="Alex">
+  <meta name="publisher" content="PestControlBoston.us">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://pestcontrolboston.us/blog/boston-landlord-pest-control-responsibilities/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://pestcontrolboston.us/blog/boston-landlord-pest-control-responsibilities/">
+  <meta property="og:title" content="Boston Landlord Pest Control Responsibilities Guide">
+  <meta property="og:description" content="Learn MA landlord pest control responsibilities, tenant rights, and legal obligations. Complete guide for Boston area property owners and renters.">
+  <meta property="og:image" content="https://pestcontrolboston.us/images/banner1.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Boston Landlord Guide to Pest Control Responsibilities">
+  <meta property="og:site_name" content="PestControlBoston.us">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-04-09T00:00:00.000Z">
+  <meta property="article:author" content="Alex">
+  <meta name="twitter:image" content="https://pestcontrolboston.us/images/banner1.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Boston Landlord Guide: Pest Control Responsibilities Under MA Law">
+  <meta name="twitter:description" content="Learn MA landlord pest control responsibilities, tenant rights, and legal obligations. Complete guide for Boston area property owners and renters.">
+
+  <meta name="geo.region" content="US-MA">
+  <meta name="geo.placename" content="Boston, Massachusetts">
+  <meta name="geo.position" content="42.3601;-71.0589">
+  <meta name="ICBM" content="42.3601, -71.0589">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Boston Landlord Guide: Pest Control Responsibilities Under MA Law",
+    "description": "Learn MA landlord pest control responsibilities, tenant rights, and legal obligations. Complete guide for Boston area property owners and renters.",
+    "image": [
+      "https://pestcontrolboston.us/images/banner1.png"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Alex",
+      "url": "https://pestcontrolboston.us"
+    },
+    "publisher": {"@type": "Organization","name": "PestControlBoston.us","logo": {"@type": "ImageObject","url": "https://pestcontrolboston.us/images/logo.png"}},
+    "datePublished": "2026-04-09",
+    "dateModified": "2026-04-09",
+    "mainEntityOfPage": {"@type": "WebPage","@id": "https://pestcontrolboston.us/blog/boston-landlord-pest-control-responsibilities/"},
+    "keywords": "Boston landlord pest control, Massachusetts MA landlord responsibilities, tenant rights pests Boston",
+    "articleSection": "Pest Control Legal Guide",
+    "inLanguage": "en-US",
+    "wordCount": "1200"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alex",
+    "url": "https://pestcontrolboston.us",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "PestControlBoston.us",
+      "url": "https://pestcontrolboston.us"
+    },
+    "jobTitle": "Pest Control Specialist"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://pestcontrolboston.us/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://pestcontrolboston.us/blog/"},
+      {"@type":"ListItem","position":3,"name":"Boston Landlord Pest Control Guide","item":"https://pestcontrolboston.us/blog/boston-landlord-pest-control-responsibilities/"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is responsible for mice in a rental property in Massachusetts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The landlord is responsible for mice and rodent control in Massachusetts rental properties. State sanitary code requires landlords to maintain rodent-free conditions and seal entry points. Tenants must pay only if their actions directly caused the infestation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can my landlord make me pay for pest control in Boston?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your landlord can require payment only if you caused the infestation through negligence or improper housekeeping. Otherwise, pest control responsibilities fall to the property owner under Massachusetts law, regardless of lease language attempting to transfer this duty."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly must landlords respond to pest complaints in Boston?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Boston landlords must respond to pest complaints within five business days. For serious health hazards like rat infestations, response should be immediate. Failure to respond allows tenants to contact inspectional services for enforcement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are landlords required to spray for bugs between tenants?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Massachusetts law doesn't specifically require spraying between tenants, but landlords must deliver units in pest-free, habitable condition. This typically means inspection and treatment if any pest evidence exists before new tenants move in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I withhold rent for a cockroach infestation in my Boston apartment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You may withhold rent for serious cockroach infestations making your apartment uninhabitable, but you must follow proper legal procedures. Notify your landlord in writing, allow reasonable time for repairs, and consider depositing rent in escrow to protect against eviction."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body.modal-open { overflow: hidden; }
+    .prose h2 { font-size: 1.875rem; font-weight: 800; color: #111827; margin-top: 3rem; margin-bottom: 1.25rem; line-height: 1.2; }
+    .prose h3 { font-size: 1.375rem; font-weight: 700; color: #111827; margin-top: 2rem; margin-bottom: 0.875rem; }
+    .prose p { color: #374151; line-height: 1.8; font-size: 1.0625rem; margin-bottom: 1.375rem; }
+    .prose ul { margin-bottom: 1.5rem; padding-left: 1.75rem; }
+    .prose ul li { color: #374151; font-size: 1.0625rem; line-height: 1.75; margin-bottom: 0.5rem; list-style-type: disc; }
+    .prose a { color: #16a34a; font-weight: 600; text-decoration: underline; text-decoration-color: transparent; transition: text-decoration-color 0.2s; }
+    .prose a:hover { text-decoration-color: #16a34a; }
+    .callout-green { background: #f0fdf4; border-left: 4px solid #16a34a; border-radius: 0.75rem; padding: 1.25rem 1.5rem; margin: 1.75rem 0; }
+    .callout-red { background: #fff1f2; border-left: 4px solid #ef4444; border-radius: 0.75rem; padding: 1.25rem 1.5rem; margin: 1.75rem 0; }
+    .step-box { background: #111827; color: white; border-radius: 1rem; padding: 1.5rem; position: relative; margin-bottom: 1rem; }
+    .step-num { position: absolute; top: -1rem; left: 1.5rem; width: 2rem; height: 2rem; background: #16a34a; color: #111827; border-radius: 9999px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.875rem; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    .toc-link { display: block; padding: 0.35rem 0; color: #374151; font-size: 0.9375rem; text-decoration: none; border-left: 3px solid transparent; padding-left: 0.75rem; transition: all 0.2s; }
+    .toc-link:hover { color: #16a34a; border-left-color: #16a34a; padding-left: 1rem; }
+    .prose figure { margin: 2.5rem 0; }
+    .prose figure img { border-radius: 1rem; box-shadow: 0 8px 32px rgba(0,0,0,0.12); width: 100%; }
+    .prose figcaption { text-align: center; font-size: 0.875rem; color: #9ca3af; margin-top: 0.75rem; font-style: italic; }
+  </style>
+</head>
+<body class="min-h-screen bg-white text-gray-900 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div class="flex justify-between items-center">
+        <a href="/"><img src="/images/logo.png" alt="PestControlBoston.us Logo" class="h-20 md:h-24 w-auto" /></a>
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="/#mice-section" class="font-bold text-gray-700 hover:text-green-600 transition-colors">Mice Control</a>
+          <a href="/#cockroach-section" class="font-bold text-gray-700 hover:text-green-600 transition-colors">Cockroach Control</a>
+          <a href="/blog/" class="font-bold text-green-600 transition-colors">Blog</a>
+          <a href="/#contact-form" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">FREE Inspection</a>
+        </nav>
+        <div class="md:hidden flex items-center gap-3">
+          <a href="/blog/" class="font-bold text-green-600 text-sm">Blog</a>
+          <a href="/#contact-form" class="bg-green-600 text-white font-semibold py-2 px-4 rounded-lg text-sm">Free Inspection</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="bg-gray-50 border-b border-gray-200 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-gray-500 flex-wrap" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-green-600 transition-colors font-medium">Home</a>
+        <i data-lucide="chevron-right" class="w-4 h-4 flex-shrink-0"></i>
+        <a href="/blog/" class="hover:text-green-600 transition-colors font-medium">Blog</a>
+        <i data-lucide="chevron-right" class="w-4 h-4 flex-shrink-0"></i>
+        <span class="text-green-600 font-bold">Boston Landlord Pest Control Responsibilities</span>
+      </nav>
+    </div>
+  </div>
+
+  <main class="bg-white min-h-screen pb-24">
+
+    <!-- Article Header -->
+    <header class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10 text-center">
+      <div class="flex items-center justify-center gap-3 text-sm text-green-600 font-bold tracking-wide uppercase mb-6">
+        <span>📋 Legal & Tenant Guide</span>
+        <span class="text-gray-300">•</span>
+        <a href="/blog/" class="hover:underline">Blog</a>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 leading-tight mb-8">
+        Boston Landlord Guide: Pest Control Responsibilities Under MA Law
+      </h1>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-gray-500 text-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white font-bold text-sm">AL</div>
+          <div class="text-left">
+            <p class="font-bold text-gray-900">Alex</p>
+            <p>April 9, 2026</p>
+          </div>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="font-medium">10 Min Read</p>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="font-medium">Boston Legal Guide</p>
+      </div>
+    </header>
+
+    <!-- Featured Image -->
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-14">
+      <div class="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl">
+        <img src="/images/banner1.png" alt="Boston Landlord Pest Control Guide" class="w-full h-full object-cover" />
+      </div>
+      <p class="text-center text-sm text-gray-400 mt-3 italic">Understanding the pest control responsibilities of landlords and tenants in the Greater Boston Area.</p>
+    </div>
+
+    <!-- Table of Contents -->
+    <aside class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mb-2">
+      <div class="bg-green-50 border border-green-100 rounded-2xl p-6">
+        <p class="font-bold text-gray-900 text-base mb-3 flex items-center gap-2"><i data-lucide="list" class="w-5 h-5 text-green-600"></i> Table of Contents</p>
+        <nav aria-label="Table of contents">
+          <a href="#who-pays" class="toc-link">Who Pays for Pest Control in Boston Rentals?</a>
+          <a href="#sanitary-code" class="toc-link">Understanding Massachusetts State Sanitary Code</a>
+          <a href="#boston-responsibilities" class="toc-link">Boston Landlord Pest Control Responsibilities</a>
+          <a href="#tenant-responsibilities" class="toc-link">When Tenants Must Pay for Pest Control</a>
+          <a href="#bedbug-infestations" class="toc-link">What About Bedbug Infestations?</a>
+          <a href="#report-problems" class="toc-link">How to Report Pest Problems to Your Landlord</a>
+          <a href="#preventing-problems" class="toc-link">Preventing Pest Problems in Rental Properties</a>
+          <a href="#legal-remedies" class="toc-link">Legal Remedies for Unaddressed Pest Infestations</a>
+          <a href="#costs-expectations" class="toc-link">Boston Pest Control Costs and Expectations</a>
+          <a href="#multi-family" class="toc-link">Special Considerations for Multi-Family Properties</a>
+          <a href="#faq" class="toc-link">Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Article Body -->
+    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 prose">
+      <p>Living in Boston means dealing with old triple-deckers, basement apartments, and the occasional unwanted roommate of the six-legged variety. Whether you're renting in Southie, Allston, or Jamaica Plain, understanding who handles pest problems can save you serious headaches and cash.</p>
+      <p>Massachusetts has specific laws about pest control responsibilities that both landlords and tenants need to know. This guide breaks down everything you need to understand about keeping your rental property critter-free.</p>
+      
+      <h2 id="who-pays">Who Pays for Pest Control in Boston Rentals?</h2>
+      <p>The short answer? Usually the landlord. But it depends on the situation.</p>
+      <p>Under Massachusetts General Law Chapter 111, Section 127L, landlords must maintain properties free from rodent infestation. The state sanitary code requires landlords to provide habitable living conditions, which includes keeping pests out.</p>
+      <p>Property owners must handle infestations of:</p>
+      <ul>
+          <li>Rats and mice</li>
+          <li>Cockroaches</li>
+          <li>Bedbugs (in most cases)</li>
+          <li>Termites</li>
+          <li>Ants</li>
+      </ul>
+      <p>However, if tenant behavior caused the problem, landlords can shift responsibility. Think garbage piling up or food left everywhere attracting roaches.</p>
+
+      <h2 id="sanitary-code">Understanding Massachusetts State Sanitary Code</h2>
+      <p>The state sanitary code (105 CMR 410) sets minimum standards for rental housing. Regarding pest control responsibilities, it requires:</p>
+      <p><strong>Landlords must keep common areas and building exteriors pest-free.</strong> This includes hallways, basements, and the building's structure itself.</p>
+      <p><strong>Individual units must be delivered pest-free at lease start.</strong> If you move into an apartment already crawling with cockroaches, that's on the landlord.</p>
+      <p><strong>Property owners must seal entry points.</strong> Holes around pipes, gaps in walls, and foundation cracks need fixing to prevent pest entry.</p>
+      <p>The code doesn't mess around. Violations can result in fines, required repairs, and potential rent withholding by tenants.</p>
+
+      <h2 id="boston-responsibilities">Boston Landlord Pest Control Responsibilities</h2>
+      <p>Property owners in Boston face stricter requirements than many other Massachusetts cities. The Boston Inspectional Services Department enforces additional regulations.</p>
+      <p><strong>Landlords must provide quarterly pest control</strong> in buildings with three or more units. This preventive approach helps catch problems early.</p>
+      <p><strong>When tenants report infestations, landlords have five days to respond.</strong> Waiting weeks while bedbugs multiply won't fly with the city.</p>
+      <p><strong>Documentation matters tremendously.</strong> Smart landlords keep records of all pest control treatments, tenant complaints, and inspection reports.</p>
+      <p>For professional help managing these responsibilities, services like <a href="/">pestcontrolboston.us</a> offer comprehensive solutions for property owners throughout the Greater Boston area. They understand local regulations and provide the documentation landlords need to stay compliant. When dealing with the particularly tricky problem of bedbugs, specialized services like <a href="https://bedbugsboston.us/" target="_blank" rel="noopener">bedbugsboston.us</a> can help landlords address infestations quickly and thoroughly, minimizing tenant complaints and potential legal issues.</p>
+
+      <h2 id="tenant-responsibilities">When Tenants Must Pay for Pest Control</h2>
+      <p>Tenants aren't always off the hook. You might be responsible when:</p>
+      <ul>
+          <li><strong>Your actions caused the infestation.</strong> If inspection shows your housekeeping brought roaches, you're paying.</li>
+          <li><strong>You brought bedbugs from furniture.</strong> Dragging that free couch from the curb seemed smart until the bites started.</li>
+          <li><strong>You denied access for treatment.</strong> Landlords can't fix problems if you won't let exterminators in.</li>
+          <li><strong>Your lease specifically assigns certain pest control duties.</strong> Some leases require tenants to handle minor issues like fruit flies or ants.</li>
+      </ul>
+      <p>However, landlords can't just stick pest control costs in the lease and walk away. Massachusetts courts have ruled that certain responsibilities can't be transferred to tenants regardless of lease language.</p>
+
+      <h2 id="bedbug-infestations">What About Bedbug Infestations?</h2>
+      <p>Bedbugs deserve special attention because they're expensive nightmares that spread between units.</p>
+      <p>Massachusetts bedbug law (also under Chapter 111, Section 127L) creates specific rules. Landlords must pay for bedbug treatment in most situations.</p>
+      <p><strong>Before moving in, landlords must disclose any bedbug history</strong> in the unit or building from the past year. Hiding this information can mean serious legal trouble.</p>
+      <p><strong>Multi-unit buildings require special protocols.</strong> If bedbugs appear in one apartment, landlords should inspect adjacent units since these pests travel through walls.</p>
+      <p><strong>Tenants must cooperate with treatment.</strong> This means extensive preparation like bagging clothes, moving furniture, and allowing multiple treatments.</p>
+      <p>The cost of bedbug elimination runs between $1,000 and $3,000 per unit in Boston. Most landlords can't bill tenants unless they prove tenant negligence caused the problem.</p>
+
+      <h2 id="report-problems">How to Report Pest Problems to Your Landlord</h2>
+      <p>Documentation protects everyone. Follow these steps when you spot pests:</p>
+      <ul>
+          <li><strong>Notify your landlord in writing immediately.</strong> Text messages count, but email creates better records.</li>
+          <li><strong>Take photos or videos of the pests and any damage.</strong> Courts love evidence.</li>
+          <li><strong>Note the date, time, and location of each sighting.</strong> This helps exterminators identify entry points.</li>
+          <li><strong>Keep copies of all communications.</strong> Screenshots, printed emails, everything.</li>
+      </ul>
+      <p>If your landlord ignores the problem for more than five business days, contact Boston Inspectional Services at 311. They'll send an inspector who can order repairs.</p>
+
+      <h2 id="preventing-problems">Preventing Pest Problems in Rental Properties</h2>
+      <p>Prevention beats treatment every time. Both landlords and tenants benefit from proactive measures.</p>
+      <p><strong>Landlords should schedule regular inspections</strong> of basements, attics, and common areas. Catching problems early saves thousands.</p>
+      <p><strong>Seal all exterior openings.</strong> Mice can squeeze through holes the size of a dime.</p>
+      <p><strong>Maintain proper trash facilities.</strong> Overflowing dumpsters attract rats like Fenway attracts Sox fans.</p>
+      <p><strong>Address moisture problems quickly.</strong> Water leaks create perfect conditions for roaches and other pests.</p>
+      <p>Tenants can help by keeping units clean, storing food properly, and reporting maintenance issues that could attract pests.</p>
+
+      <h2 id="legal-remedies">Legal Remedies for Unaddressed Pest Infestations</h2>
+      <p>When landlords ignore pest control responsibilities, tenants have options.</p>
+      <ul>
+          <li><strong>Rent withholding might be justified</strong> for serious infestations. Massachusetts law allows this, but follow proper procedures or risk eviction.</li>
+          <li><strong>Report to the Board of Health.</strong> Inspectors can issue violation notices requiring landlords to fix problems.</li>
+          <li><strong>Breaking the lease may be possible</strong> if conditions are uninhabitable. Document everything before taking this step.</li>
+          <li><strong>Small claims court can recover costs</strong> if you paid for treatment the landlord should have covered.</li>
+          <li><strong>Chapter 93A consumer protection claims</strong> can result in double or triple damages for particularly bad landlord behavior.</li>
+      </ul>
+
+      <h2 id="costs-expectations">Boston Pest Control Costs and Expectations</h2>
+      <p>Understanding typical costs helps everyone budget appropriately.</p>
+      <ul>
+          <li>One-time roach treatments run $150 to $300 for an apartment. Severe infestations cost more.</li>
+          <li>Rodent control with trapping and exclusion costs $300 to $500 initially, plus monthly monitoring fees.</li>
+          <li>Quarterly preventive pest control for multi-unit buildings averages $50 to $75 per unit monthly.</li>
+          <li>Bedbug heat treatment reaches $1,500 to $3,000 per apartment depending on size.</li>
+      </ul>
+      <p>These investments protect property values and keep tenants happy. Happy tenants renew leases, reducing costly turnover.</p>
+
+      <h2 id="multi-family">Special Considerations for Multi-Family Properties</h2>
+      <p>Buildings with multiple units face unique challenges regarding pest control responsibilities.</p>
+      <p>Pests don't respect unit boundaries. One tenant's roach problem becomes everyone's problem fast.</p>
+      <p>Landlords should establish building-wide pest control programs rather than addressing units individually.</p>
+      <p>Lease agreements should clearly outline tenant cooperation requirements during building-wide treatments.</p>
+      <p>Common area maintenance becomes critical. Shared basements, laundry rooms, and trash areas need regular attention.</p>
+      <p>Tenant education helps too. New residents should receive information about preventing and reporting pest issues.</p>
+
+      <!-- FAQ -->
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <details class="bg-gray-50 rounded-2xl border border-gray-100 group my-4" style="margin:1rem 0;">
+        <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+          <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>Who is responsible for mice in a rental property in Massachusetts?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+        </summary>
+        <p class="px-6 pb-6 text-gray-700 text-base ml-8" style="margin:0;">The landlord is responsible for mice and rodent control in Massachusetts rental properties. State sanitary code requires landlords to maintain rodent-free conditions and seal entry points. Tenants must pay only if their actions directly caused the infestation.</p>
+      </details>
+      <details class="bg-gray-50 rounded-2xl border border-gray-100 group my-4" style="margin:1rem 0;">
+        <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+          <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>Can my landlord make me pay for pest control in Boston?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+        </summary>
+        <p class="px-6 pb-6 text-gray-700 text-base ml-8" style="margin:0;">Your landlord can require payment only if you caused the infestation through negligence or improper housekeeping. Otherwise, pest control responsibilities fall to the property owner under Massachusetts law, regardless of lease language attempting to transfer this duty.</p>
+      </details>
+      <details class="bg-gray-50 rounded-2xl border border-gray-100 group my-4" style="margin:1rem 0;">
+        <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+          <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>How quickly must landlords respond to pest complaints in Boston?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+        </summary>
+        <p class="px-6 pb-6 text-gray-700 text-base ml-8" style="margin:0;">Boston landlords must respond to pest complaints within five business days. For serious health hazards like rat infestations, response should be immediate. Failure to respond allows tenants to contact inspectional services for enforcement.</p>
+      </details>
+      <details class="bg-gray-50 rounded-2xl border border-gray-100 group my-4" style="margin:1rem 0;">
+        <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+          <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>Are landlords required to spray for bugs between tenants?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+        </summary>
+        <p class="px-6 pb-6 text-gray-700 text-base ml-8" style="margin:0;">Massachusetts law doesn't specifically require spraying between tenants, but landlords must deliver units in pest-free, habitable condition. This typically means inspection and treatment if any pest evidence exists before new tenants move in.</p>
+      </details>
+      <details class="bg-gray-50 rounded-2xl border border-gray-100 group my-4" style="margin:1rem 0;">
+        <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-gray-900 text-lg list-none">
+          <span class="flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>Can I withhold rent for a cockroach infestation in my Boston apartment?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+        </summary>
+        <p class="px-6 pb-6 text-gray-700 text-base ml-8" style="margin:0;">You may withhold rent for serious cockroach infestations making your apartment uninhabitable, but you must follow proper legal procedures. Notify your landlord in writing, allow reasonable time for repairs, and consider depositing rent in escrow to protect against eviction.</p>
+      </details>
+
+      <!-- CTA -->
+      <div class="mt-14 p-10 bg-green-600 rounded-3xl text-center shadow-xl" style="margin-top:3.5rem;">
+        <h3 style="color:white;font-size:1.75rem;font-weight:800;margin-bottom:1rem;margin-top:0;">Dealing with Pests in Your Property?</h3>
+        <p style="color:#bbf7d0;font-size:1.0625rem;margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto;">Connect with licensed Greater Boston pest control professionals to handle your infestations correctly and compliantly.</p>
+        <a href="/#contact-form" style="display:inline-block;background:white;color:#15803d;font-weight:800;font-size:1.0625rem;padding:1rem 2.5rem;border-radius:0.75rem;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.15);transition:transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+          Get a Free Inspection →
+        </a>
+      </div>
+
+    </article>
+
+    <!-- Related Articles -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-100 mt-8">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-8">Keep Reading</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="/#mice-section" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-1 hover:shadow-lg transition-all">
+          <div class="h-44 overflow-hidden">
+            <img src="/images/banner1.png" alt="Professional mice control service in Boston" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-green-600 font-bold uppercase tracking-wide mb-2">🐭 Our Service</p>
+            <p class="font-bold text-gray-900 group-hover:text-green-600 transition-colors">Professional Mice Elimination — Boston & Greater MA</p>
+            <p class="text-gray-600 text-sm mt-1">Inspection, treatment, and exclusion for homes and multi-unit buildings.</p>
+          </div>
+        </a>
+        <a href="/blog/mice-boston-brownstones/" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-1 hover:shadow-lg transition-all">
+          <div class="h-44 overflow-hidden">
+            <img src="/images/banner3.png" alt="Mice in Boston brownstones" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-green-600 font-bold uppercase tracking-wide mb-2">🏛️ Historic Homes</p>
+            <p class="font-bold text-gray-900 group-hover:text-green-600 transition-colors">Mice in Boston Brownstones: Pest Guide</p>
+            <p class="text-gray-600 text-sm mt-1">Learn why these architectural gems need specialized rodent control and prevention.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 mb-10">
+        <div>
+          <img src="/images/logo.png" alt="PestControlBoston.us" class="h-16 w-auto mb-4 brightness-0 invert" />
+          <p class="text-sm text-gray-500 leading-relaxed">Free referral service connecting Boston homeowners and businesses with licensed pest control professionals.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-lg mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/" class="hover:text-green-400 transition-colors">Home</a></li>
+            <li><a href="/#mice-section" class="hover:text-green-400 transition-colors">Mice Control</a></li>
+            <li><a href="/#cockroach-section" class="hover:text-green-400 transition-colors">Cockroach Control</a></li>
+            <li><a href="/blog/" class="text-green-400 font-medium">Blog</a></li>
+            <li><a href="/privacy-policy.html" class="hover:text-green-400 transition-colors">Privacy Policy</a></li>
+            <li><a href="/disclaimer.html" class="hover:text-green-400 transition-colors">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-lg mb-4">Service Area</h4>
+          <ul class="space-y-1 text-sm">
+            <li>Boston, MA</li><li>Worcester, MA</li>
+            <li>Framingham, MA</li><li>Shrewsbury, MA</li>
+            <li>Marlborough, MA</li><li>Westborough, MA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 text-center text-sm">
+        <p>&copy; 2026 PestControlBoston.us — All Rights Reserved. |
+          <a href="/privacy-policy.html" class="hover:text-green-400 ml-2 transition-colors">Privacy Policy</a> |
+          <a href="/disclaimer.html" class="hover:text-green-400 ml-2 transition-colors">Disclaimer</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>"""
+
+with open(os.path.join(dir_path, 'blog/boston-landlord-pest-control-responsibilities/index.html'), 'w', encoding='utf-8') as f:
+    f.write(html_content)
