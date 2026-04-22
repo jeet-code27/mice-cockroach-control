@@ -25,7 +25,7 @@ html_content = r"""<!DOCTYPE html>
   <meta property="og:url" content="https://pestcontrolboston.us/blog/boston-landlord-pest-control-responsibilities/">
   <meta property="og:title" content="Boston Landlord Pest Control Responsibilities Guide">
   <meta property="og:description" content="Learn MA landlord pest control responsibilities, tenant rights, and legal obligations. Complete guide for Boston area property owners and renters.">
-  <meta property="og:image" content="https://pestcontrolboston.us/images/banner1.png">
+  <meta property="og:image" content="https://pestcontrolboston.us/images/banner1.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Boston Landlord Guide to Pest Control Responsibilities">
@@ -33,7 +33,7 @@ html_content = r"""<!DOCTYPE html>
   <meta property="og:locale" content="en_US">
   <meta property="article:published_time" content="2026-04-09T00:00:00.000Z">
   <meta property="article:author" content="Alex">
-  <meta name="twitter:image" content="https://pestcontrolboston.us/images/banner1.png">
+  <meta name="twitter:image" content="https://pestcontrolboston.us/images/banner1.webp">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Boston Landlord Guide: Pest Control Responsibilities Under MA Law">
@@ -51,7 +51,7 @@ html_content = r"""<!DOCTYPE html>
     "headline": "Boston Landlord Guide: Pest Control Responsibilities Under MA Law",
     "description": "Learn MA landlord pest control responsibilities, tenant rights, and legal obligations. Complete guide for Boston area property owners and renters.",
     "image": [
-      "https://pestcontrolboston.us/images/banner1.png"
+      "https://pestcontrolboston.us/images/banner1.webp"
     ],
     "author": {
       "@type": "Person",
@@ -231,7 +231,7 @@ html_content = r"""<!DOCTYPE html>
     <!-- Featured Image -->
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-14">
       <div class="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl">
-        <img src="/images/banner1.png" alt="Boston Landlord Pest Control Guide" class="w-full h-full object-cover" />
+        <img src="/images/banner1.webp" alt="Boston Landlord Pest Control Guide" class="w-full h-full object-cover" />
       </div>
       <p class="text-center text-sm text-gray-400 mt-3 italic">Understanding the pest control responsibilities of landlords and tenants in the Greater Boston Area.</p>
     </div>
@@ -408,7 +408,7 @@ html_content = r"""<!DOCTYPE html>
       <div class="grid md:grid-cols-2 gap-6">
         <a href="/#mice-section" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-1 hover:shadow-lg transition-all">
           <div class="h-44 overflow-hidden">
-            <img src="/images/banner1.png" alt="Professional mice control service in Boston" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="/images/banner1.webp" alt="Professional mice control service in Boston" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-5">
             <p class="text-xs text-green-600 font-bold uppercase tracking-wide mb-2">🐭 Our Service</p>
@@ -418,7 +418,7 @@ html_content = r"""<!DOCTYPE html>
         </a>
         <a href="/blog/mice-boston-brownstones/" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-1 hover:shadow-lg transition-all">
           <div class="h-44 overflow-hidden">
-            <img src="/images/banner3.png" alt="Mice in Boston brownstones" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="/images/banner3.webp" alt="Mice in Boston brownstones" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-5">
             <p class="text-xs text-green-600 font-bold uppercase tracking-wide mb-2">🏛️ Historic Homes</p>

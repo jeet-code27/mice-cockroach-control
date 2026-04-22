@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pest Control Blog — Boston Mice & Cockroach Guides | PestControlBoston.us</title>
-  <meta name="description" content="Expert pest control advice, local guides, and professional tips on eliminating mice and cockroaches in Boston, MA. Serving Greater Boston & Worcester County.">
-  <meta name="keywords" content="pest control blog Boston, mice exterminator tips, cockroach control advice, rodent prevention Boston MA, historic home pest control Boston">
+  <meta name="description"
+    content="Expert pest control advice, local guides, and professional tips on eliminating mice and cockroaches in Boston, MA. Serving Greater Boston & Worcester County.">
+  <meta name="keywords"
+    content="pest control blog Boston, mice exterminator tips, cockroach control advice, rodent prevention Boston MA, historic home pest control Boston">
   <meta name="author" content="PestControlBoston.us">
   <meta name="publisher" content="PestControlBoston.us">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
@@ -13,12 +16,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pestcontrolboston.us/blog/">
   <meta property="og:title" content="Pest Control Blog — Boston Mice & Cockroach Guides">
-  <meta property="og:description" content="Expert pest control advice for Boston homeowners. Mice, cockroaches, rodents and historic home guides.">
+  <meta property="og:description"
+    content="Expert pest control advice for Boston homeowners. Mice, cockroaches, rodents and historic home guides.">
   <meta property="og:site_name" content="PestControlBoston.us">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pest Control Blog | PestControlBoston.us">
-  <meta name="twitter:description" content="Expert pest control advice for Boston homeowners. Mice, cockroaches, rodents and more.">
+  <meta name="twitter:description"
+    content="Expert pest control advice for Boston homeowners. Mice, cockroaches, rodents and more.">
   <meta name="geo.region" content="US-MA">
   <meta name="geo.placename" content="Boston, Massachusetts">
 
@@ -52,12 +57,25 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
-    .img-zoom img { transition: transform 0.5s ease; }
-    .img-zoom:hover img { transform: scale(1.05); }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .img-zoom img {
+      transition: transform 0.5s ease;
+    }
+
+    .img-zoom:hover img {
+      transform: scale(1.05);
+    }
   </style>
 </head>
+
 <body class="min-h-screen bg-white text-gray-900 font-sans">
 
   <!-- Header -->
@@ -66,18 +84,59 @@
       <div class="flex justify-between items-center">
         <a href="/"><img src="/images/logo.png" alt="PestControlBoston.us Logo" class="h-20 md:h-24 w-auto" /></a>
         <nav class="hidden md:flex items-center gap-6">
-          <a href="/#mice-section" class="font-bold text-gray-700 hover:text-green-600 transition-colors">Mice Control</a>
-          <a href="/#cockroach-section" class="font-bold text-gray-700 hover:text-green-600 transition-colors">Cockroach Control</a>
+          <a href="/#mice-section" class="font-bold text-gray-700 hover:text-green-600 transition-colors">Mice
+            Control</a>
+          <a href="/#cockroach-section" class="font-bold text-gray-700 hover:text-green-600 transition-colors">Cockroach
+            Control</a>
           <a href="/blog/" class="font-bold text-green-600 border-b-2 border-green-600">Blog</a>
-          <a href="/#contact-form" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">FREE Inspection</a>
+          <a href="/#contact-form"
+            class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">FREE
+            Inspection</a>
         </nav>
-        <div class="md:hidden flex items-center gap-3">
-          <a href="/blog/" class="font-bold text-green-600 text-sm">Blog</a>
-          <a href="/#contact-form" class="bg-green-600 text-white font-semibold py-2 px-4 rounded-lg text-sm">Free Inspection</a>
+
+        <!-- Mobile Nav Hamburger -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn" class="text-gray-700 hover:text-green-600 focus:outline-none p-2">
+            <i data-lucide="menu" class="w-7 h-7"></i>
+          </button>
         </div>
       </div>
     </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full left-0">
+      <div class="px-4 py-3 flex flex-col space-y-3">
+        <a href="/#mice-section" class="mobile-link font-bold text-gray-700 py-2 border-b border-gray-50">Mice
+          Control</a>
+        <a href="/#cockroach-section" class="mobile-link font-bold text-gray-700 py-2 border-b border-gray-50">Cockroach
+          Control</a>
+        <a href="/blog/" class="mobile-link font-bold text-green-600 py-2 border-b border-gray-50">Blog</a>
+        <a href="/#contact-form"
+          class="mobile-link bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors mt-2 text-center block">
+          FREE Inspection
+        </a>
+      </div>
+    </div>
   </header>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      if (btn && menu) {
+        btn.addEventListener("click", function () {
+          menu.classList.toggle("hidden");
+        });
+      }
+
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.add('hidden');
+        });
+      });
+    });
+  </script>
 
   <!-- Breadcrumb -->
   <div class="bg-gray-50 border-b border-gray-200 py-3">
@@ -93,7 +152,8 @@
   <!-- Hero -->
   <section class="bg-gradient-to-br from-green-50 to-green-100 py-16 md:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div class="inline-flex items-center gap-2 bg-green-100 text-green-700 font-bold px-4 py-1.5 rounded-full text-sm uppercase tracking-wider mb-6 ring-1 ring-green-600/20">
+      <div
+        class="inline-flex items-center gap-2 bg-green-100 text-green-700 font-bold px-4 py-1.5 rounded-full text-sm uppercase tracking-wider mb-6 ring-1 ring-green-600/20">
         <i data-lucide="book-open" class="w-4 h-4"></i>
         Expert Pest Control Blog
       </div>
@@ -101,13 +161,22 @@
         Pest Control <span class="text-green-600">Insights & Guides</span>
       </h1>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-        Expert advice, local news, and comprehensive guides to protecting your Boston home or business from mice, cockroaches, and other pests.
+        Expert advice, local news, and comprehensive guides to protecting your Boston home or business from mice,
+        cockroaches, and other pests.
       </p>
       <div class="flex flex-wrap justify-center gap-3">
-        <span class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">🐭 Mice Control</span>
-        <span class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">🏠 Historic Homes</span>
-        <span class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">🏛️ Boston Local Tips</span>
-        <span class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">🔬 Prevention Guides</span>
+        <span
+          class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">🐭
+          Mice Control</span>
+        <span
+          class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">🏠
+          Historic Homes</span>
+        <span
+          class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">🏛️
+          Boston Local Tips</span>
+        <span
+          class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">🔬
+          Prevention Guides</span>
       </div>
     </div>
   </section>
@@ -121,14 +190,14 @@
       </div>
 
       <a href="/blog/mice-boston-brownstones/" class="group block">
-        <div class="grid md:grid-cols-2 gap-0 bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 card-hover">
+        <div
+          class="grid md:grid-cols-2 gap-0 bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 card-hover">
           <div class="img-zoom relative h-72 md:h-full overflow-hidden">
-            <img
-              src="/images/banner3.png"
+            <img src="/images/banner3.webp"
               alt="Boston brownstone and triple-decker home — mice infestation guide for historic Boston homes"
-              class="w-full h-full object-cover"
-            />
-            <div class="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+              class="w-full h-full object-cover" />
+            <div
+              class="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
               Featured • Mice Control
             </div>
           </div>
@@ -140,21 +209,29 @@
               <span class="w-1 h-1 rounded-full bg-gray-300"></span>
               <span>Boston Pest Experts</span>
             </div>
-            <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 leading-snug mb-4 group-hover:text-green-600 transition-colors">
+            <h2
+              class="text-2xl md:text-3xl font-extrabold text-gray-900 leading-snug mb-4 group-hover:text-green-600 transition-colors">
               Mice in Boston Brownstones: Historic Home Pest Guide
             </h2>
             <p class="text-gray-600 text-base mb-6">
-              If you live in a Southie brownstone or a Dorchester triple-decker, you probably know the drill. That scratching sound in the walls at 2 AM. Boston's historic homes are wicked beautiful — and basically five-star hotels for rodents. Here's why, and what to do about it.
+              If you live in a Southie brownstone or a Dorchester triple-decker, you probably know the drill. That
+              scratching sound in the walls at 2 AM. Boston's historic homes are wicked beautiful — and basically
+              five-star hotels for rodents. Here's why, and what to do about it.
             </p>
             <div class="flex flex-wrap gap-2 mb-6">
-              <span class="bg-green-50 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">🏠 Triple-Deckers</span>
-              <span class="bg-green-50 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">🧱 Brownstones</span>
-              <span class="bg-green-50 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">🔒 Exclusion Guide</span>
-              <span class="bg-green-50 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">📋 Tenant Rights</span>
+              <span class="bg-green-50 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">🏠
+                Triple-Deckers</span>
+              <span class="bg-green-50 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">🧱
+                Brownstones</span>
+              <span class="bg-green-50 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">🔒 Exclusion
+                Guide</span>
+              <span class="bg-green-50 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">📋 Tenant
+                Rights</span>
             </div>
             <div class="flex items-center text-green-600 font-bold text-sm">
               Read Full Guide
-              <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </div>
@@ -172,24 +249,33 @@
         <h2 class="text-sm font-bold text-green-600 uppercase tracking-widest">More Guides</h2>
       </div>
       <div class="grid md:grid-cols-2 gap-6">
-        <a href="/blog/boston-landlord-pest-control-responsibilities/" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-1 hover:shadow-lg transition-all">
+        <a href="/blog/boston-landlord-pest-control-responsibilities/"
+          class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-1 hover:shadow-lg transition-all">
           <div class="h-44 overflow-hidden">
-            <img src="/images/boston-landlord-pest-control-guide.webp" alt="Boston Landlord Pest Control Guide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="/images/boston-landlord-pest-control-guide.webp" alt="Boston Landlord Pest Control Guide"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-5">
             <p class="text-xs text-green-600 font-bold uppercase tracking-wide mb-2">📋 Legal & Tenant Guide</p>
-            <p class="font-bold text-gray-900 group-hover:text-green-600 transition-colors">Boston Landlord Guide: Pest Control Responsibilities Under MA Law</p>
-            <p class="text-gray-600 text-sm mt-1">Learn MA landlord pest control responsibilities, tenant rights, and legal obligations. Complete guide for Boston area property owners and renters.</p>
+            <p class="font-bold text-gray-900 group-hover:text-green-600 transition-colors">Boston Landlord Guide: Pest
+              Control Responsibilities Under MA Law</p>
+            <p class="text-gray-600 text-sm mt-1">Learn MA landlord pest control responsibilities, tenant rights, and
+              legal obligations. Complete guide for Boston area property owners and renters.</p>
           </div>
         </a>
-        <a href="/blog/5-signs-mice-boston-home/" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-1 hover:shadow-lg transition-all">
+        <a href="/blog/5-signs-mice-boston-home/"
+          class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-1 hover:shadow-lg transition-all">
           <div class="h-44 overflow-hidden">
-            <img src="/images/5-tell-tale-signs-you-have-mice-in-your-boston-home.webp" alt="5 Tell-Tale Signs You Have Mice in Your Boston Home" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="/images/5-tell-tale-signs-you-have-mice-in-your-boston-home.webp"
+              alt="5 Tell-Tale Signs You Have Mice in Your Boston Home"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-5">
             <p class="text-xs text-green-600 font-bold uppercase tracking-wide mb-2">🐭 Mice Control</p>
-            <p class="font-bold text-gray-900 group-hover:text-green-600 transition-colors">5 Tell-Tale Signs You Have Mice in Your Boston Home</p>
-            <p class="text-gray-600 text-sm mt-1">Discover the warning signs of mice in your Boston property and learn effective solutions.</p>
+            <p class="font-bold text-gray-900 group-hover:text-green-600 transition-colors">5 Tell-Tale Signs You Have
+              Mice in Your Boston Home</p>
+            <p class="text-gray-600 text-sm mt-1">Discover the warning signs of mice in your Boston property and learn
+              effective solutions.</p>
           </div>
         </a>
       </div>
@@ -200,8 +286,10 @@
   <section class="py-16 bg-green-600 text-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Dealing with Mice in Your Boston Home?</h2>
-      <p class="text-xl text-green-100 mb-8">Don't let a pest problem get worse. Connect with a licensed Boston exterminator today — free inspection available.</p>
-      <a href="/#contact-form" class="inline-block bg-white text-green-700 font-bold py-4 px-10 rounded-xl hover:bg-gray-50 transition-colors text-lg shadow-xl">
+      <p class="text-xl text-green-100 mb-8">Don't let a pest problem get worse. Connect with a licensed Boston
+        exterminator today — free inspection available.</p>
+      <a href="/#contact-form"
+        class="inline-block bg-white text-green-700 font-bold py-4 px-10 rounded-xl hover:bg-gray-50 transition-colors text-lg shadow-xl">
         Get a FREE Inspection →
       </a>
     </div>
@@ -213,7 +301,8 @@
       <div class="grid md:grid-cols-3 gap-8 mb-10">
         <div>
           <img src="/images/logo.png" alt="PestControlBoston.us" class="h-16 w-auto mb-4 brightness-0 invert" />
-          <p class="text-sm text-gray-500 leading-relaxed">Free referral service connecting Boston homeowners and businesses with licensed pest control professionals.</p>
+          <p class="text-sm text-gray-500 leading-relaxed">Free referral service connecting Boston homeowners and
+            businesses with licensed pest control professionals.</p>
         </div>
         <div>
           <h4 class="text-white font-bold text-lg mb-4">Quick Links</h4>
@@ -229,9 +318,12 @@
         <div>
           <h4 class="text-white font-bold text-lg mb-4">Service Area</h4>
           <ul class="space-y-1 text-sm">
-            <li>Boston, MA</li><li>Worcester, MA</li>
-            <li>Framingham, MA</li><li>Shrewsbury, MA</li>
-            <li>Marlborough, MA</li><li>Westborough, MA</li>
+            <li>Boston, MA</li>
+            <li>Worcester, MA</li>
+            <li>Framingham, MA</li>
+            <li>Shrewsbury, MA</li>
+            <li>Marlborough, MA</li>
+            <li>Westborough, MA</li>
           </ul>
         </div>
       </div>
@@ -246,4 +338,5 @@
 
   <script>lucide.createIcons();</script>
 </body>
+
 </html>
